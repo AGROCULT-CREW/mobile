@@ -1,6 +1,4 @@
 using Assets.Models;
-using Assets.Scripts.Connectors;
-using System.Collections.Generic;
 using TMPro;
 
 namespace Assets.Scripts.Buttons
@@ -14,14 +12,14 @@ namespace Assets.Scripts.Buttons
         {
             if (_core.IsUpdateCulture)
             {
-                foreach (Culture culture in _core.Cultures)
+                foreach (CultureInput culture in _core.Cultures)
                 {
                     Text.text += culture.Id + "\n";
                 }
 
                 _core.IsUpdateCulture = !_core.IsUpdateCulture;
             }
-            
+
         }
 
     }

@@ -17,7 +17,7 @@ namespace Assets.Scripts
 
         public void UpdateCulture()
         {
-            foreach (Culture culture in _core.Cultures)
+            foreach (CultureInput culture in _core.Cultures)
             {
                 CultureDropdown.options.Add(new TMP_Dropdown.OptionData(culture.Name));
             }

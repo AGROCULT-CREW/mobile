@@ -1,6 +1,6 @@
 ﻿namespace Assets.Models
 {
-    public class Culture
+    public class GetGrainCultureInput
     {
         public int Id { get; set; }
         public string Name { get; set; }
