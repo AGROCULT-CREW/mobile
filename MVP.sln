@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B3FA6E63-F102-AA35-6DD1-B1FDE7527F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeCamera.Runtime", "NativeCamera.Runtime.csproj", "{9EA1577E-7DE3-9777-B7AD-183D95F23A08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeCamera.Editor", "NativeCamera.Editor.csproj", "{B4FBB304-4AB8-04C5-BE69-D05B4A5D2308}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3FA6E63-F102-AA35-6DD1-B1FDE7527F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FA6E63-F102-AA35-6DD1-B1FDE7527F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FA6E63-F102-AA35-6DD1-B1FDE7527F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FA6E63-F102-AA35-6DD1-B1FDE7527F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA1577E-7DE3-9777-B7AD-183D95F23A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA1577E-7DE3-9777-B7AD-183D95F23A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA1577E-7DE3-9777-B7AD-183D95F23A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA1577E-7DE3-9777-B7AD-183D95F23A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FBB304-4AB8-04C5-BE69-D05B4A5D2308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FBB304-4AB8-04C5-BE69-D05B4A5D2308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FBB304-4AB8-04C5-BE69-D05B4A5D2308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FBB304-4AB8-04C5-BE69-D05B4A5D2308}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
