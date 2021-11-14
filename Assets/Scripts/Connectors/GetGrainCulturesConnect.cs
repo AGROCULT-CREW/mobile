@@ -18,7 +18,7 @@ namespace Assets.Scripts.Connectors
             yield return request.SendWebRequest();
             TextMeshPro.text = request.downloadHandler.text;
             _deserializer = new Deserializer();
-            _core.Cultures = _deserializer.Deserialize<List<CultureInput>>(request.downloadHandler.text);
+            _core.Cultures = _deserializer.Deserialize<List<GetGrainCultureInput>>(request.downloadHandler.text);
             _core.IsUpdateCulture = true;
         }
     }

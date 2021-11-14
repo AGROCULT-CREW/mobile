@@ -1,12 +1,16 @@
 ﻿using Assets.Models;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
     public class Core
     {
         private static Core core;
-        public List<CultureInput> Cultures { get; set; }
+
+        public static Dictionary<int,Texture2D> Textures = new Dictionary<int, Texture2D>(); //Таблица фото
+        public List<GetGrainCultureInput> Cultures { get; set; }
         public CreateContainerInput CreateContainerInput { get; set; }
         public GetContainerInput GetContainerInput { get; set; }
         public GetContainerFilesInput GetContainerFilesInput { get; set; }
@@ -18,21 +22,21 @@ namespace Assets.Scripts
 
         private Core()
         {
-            Cultures = new List<CultureInput>()
+            Cultures = new List<GetGrainCultureInput>()
             {
-                new CultureInput()
+                new GetGrainCultureInput()
                 {
                     Id = 2,
                     Name = "Подсолнечник/Классические гибриды - ЛГ 5377",
                     AverageWeightThousandGrains = 80
                 },
-                new CultureInput()
+                new GetGrainCultureInput()
                 {
                     Id = 3,
                     Name = "Подсолнечник/Классические гибриды",
                     AverageWeightThousandGrains = 60
                 },
-                new CultureInput()
+                new GetGrainCultureInput()
                 {
                     Id = 4,
                     Name = "Подсолнечник/Классические гибриды - НК РОКИ",

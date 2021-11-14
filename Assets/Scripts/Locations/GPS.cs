@@ -7,7 +7,8 @@ namespace Assets.Scripts.Locations
     public class GPS : MonoBehaviour, ILocation
     {
         public static GPS Instance { get; set; }
-        public TextMeshProUGUI text;
+        public TMP_InputField _latitude;
+        public TMP_InputField _longitude;
 
         void Start()
         {
@@ -47,16 +48,8 @@ namespace Assets.Scripts.Locations
             {
                 yield break;
             }
-
-            text.text = "Location: "
-                        + Input.location.lastData.latitude + " "
-                        + Input.location.lastData.longitude + " "
-                        + Input.location.lastData.altitude + " "
-                        + Input.location.lastData.horizontalAccuracy + " "
-                        + Input.location.lastData.timestamp;
-
-            var _latitude = Input.location.lastData.latitude;
-            var _longitude = Input.location.lastData.longitude;
+            _latitude.text = Input.location.lastData.latitude.ToString();
+            _longitude.text = Input.location.lastData.longitude.ToString();
             Input.location.Stop();
         }
     }

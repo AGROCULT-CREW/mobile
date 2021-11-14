@@ -12,7 +12,7 @@ namespace Assets.Scripts.Buttons
         {
             if (_core.IsUpdateCulture)
             {
-                foreach (CultureInput culture in _core.Cultures)
+                foreach (GetGrainCultureInput culture in _core.Cultures)
                 {
                     Text.text += culture.Id + "\n";
                 }
