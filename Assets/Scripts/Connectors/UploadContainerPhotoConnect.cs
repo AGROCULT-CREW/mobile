@@ -13,8 +13,15 @@ namespace Assets.Scripts.Connectors
 
         protected override IEnumerator SendRequest()
         {
-            string json = string.Empty;
-            using UnityWebRequest request = UnityWebRequest.Post(Url, json);
+            List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
+            foreach (var item in Core.Textures)
+            {
+                formData.Add(new MultipartFormDataSection("item.Key", ImageConversion.EncodeToJPG(item.Value)));
+            }
+            
+
+
+            using UnityWebRequest request = UnityWebRequest.Post(Url, formData);
             // Request and wait for the desired page.
             yield return request.SendWebRequest();
             TextMeshPro.text = request.downloadHandler.text;

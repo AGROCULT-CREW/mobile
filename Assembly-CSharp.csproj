@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +53,9 @@
     <UnityVersion>2022.1.0a13</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\Serializers\ISerializer.cs" />
     <Compile Include="Assets\Scripts\Locations\ILocation.cs" />
     <Compile Include="Assets\Models\CreateContainerInput.cs" />
@@ -62,6 +65,7 @@
     <Compile Include="Assets\Scripts\Buttons\Interfaces\IButton.cs" />
     <Compile Include="Assets\Scripts\Report.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Buttons\ReportListButton.cs" />
     <Compile Include="Assets\Scripts\Connectors\UploadContainerPhotoConnect.cs" />
     <Compile Include="Assets\Scripts\Buttons\UpdateButton.cs" />
     <Compile Include="Assets\Scripts\Connectors\HealthCheckConnect.cs" />
@@ -96,10 +100,10 @@
     <Compile Include="Assets\Scripts\Deserializers\IDeserializer.cs" />
     <Compile Include="Assets\Models\GetContainerInput.cs" />
     <Compile Include="Assets\PermissionProvider\Stubs\AndroidJavaClassStub.cs" />
-    <Compile Include="Assets\Models\CreateContainerOutput.cs" />
-    <Compile Include="Assets\PermissionProvider\Example.cs" />
-    <Compile Include="Assets\Scripts\Buttons\ReportListButton.cs" />
     <Compile Include="Assets\Scripts\Buttons\PhotoButton.cs" />
+    <Compile Include="Assets\Models\CreateContainerOutput.cs" />
+    <Compile Include="Assets\Scripts\Buttons\ReportMainButton.cs" />
+    <Compile Include="Assets\PermissionProvider\Example.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
